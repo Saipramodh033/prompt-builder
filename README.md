@@ -1,15 +1,15 @@
-# 🚀 Prompt Builder - AI-Powered Prompt Generation Platform
+# 🚀 Prompt Builder – AI-Powered Prompt Optimization Platform
 
-A full-stack web application that allows users to build, manage, and execute AI prompts with Google OAuth authentication and personalized prompt generation.
+A full-stack web application that helps users craft, refine, and manage prompts with AI assistance.
+It transforms vague ideas into clear, expert-grade prompts, categorized and personalized by role, style, and intent — without executing them on any model.
 
 ## ✨ Features
 
 - **🔐 Google OAuth Authentication** - Secure login and registration with Google
-- **📝 Prompt Builder** - Interactive prompt creation with categories and styles
-- **🤖 AI Integration** - Execute prompts with AI (OpenAI/Gemini integration ready)
+- **🤖 AI-Powered Optimization** - Leverages Google Gemini API to refine rough inputs into clear, context-aware, and high-quality prompts
+- **🎯 Role & Style Personalization** - Dynamically adapts tone, structure, and format based on user profiles, roles, and intent
 - **📊 Dashboard** - View statistics, manage prompts, and track executions
 - **📱 Responsive Design** - Mobile-friendly interface with Tailwind CSS
-- **🎯 Role-based Prompts** - Personalized prompts based on user roles
 - **💾 Prompt Library** - Save, edit, and organize your prompts
 
 ## 🛠️ Tech Stack
@@ -152,11 +152,11 @@ prompt-builder/
 - User preferences for default categories and styles
 - Secure password handling
 
-### Prompt System
+### 🧠 Prompt Optimization
 - **Categories**: Each optimized for specific use cases
 - **Styles**: Affect tone and format of responses
-- **Templates**: Dynamic prompt generation based on user profile
-- **Execution**: Real-time AI responses via OpenAI API
+- **Templates**: Dynamic prompt generation based on user profile and intent for future use
+- **Execution**: Real-time AI responses and optimizations via Gemini API
 - **Management**: Full CRUD operations with user isolation
 
 ### UI/UX Design
@@ -199,10 +199,10 @@ NEXT_PUBLIC_API_URL=http://localhost:8000/api
 - `GET /api/prompts/{id}/` - Get specific prompt
 - `PATCH /api/prompts/{id}/` - Update prompt
 - `DELETE /api/prompts/{id}/` - Delete prompt
-- `POST /api/prompts/execute/` - Execute prompt with AI
+- `POST /api/prompts/execute/` - Build, Align and Optimize prompt with AI
 - `GET /api/prompts/dashboard-stats/` - Get user statistics
 
-## 🚀 Deployment
+## 🚀 Deployment Plan
 
 ### Frontend (Vercel)
 - Push to GitHub
@@ -251,7 +251,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8000/api
 - **Error Handling**: Toast notifications and error states
 
 ## 🔐 Security Features
-
+- Google OAuth Authentication
 - JWT token authentication with refresh
 - Password validation and hashing
 - CORS configuration
@@ -264,4 +264,3 @@ NEXT_PUBLIC_API_URL=http://localhost:8000/api
 
 **Status**: ✅ **Ready for Development Testing**
 
-All TypeScript errors resolved. Ready to set up database, configure environment variables, and start both servers for full functionality testing.
